@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+:root {
+  font-family: Roboto;
+  font-size: 1rem;
+}
+
+body {
+  height: 100vh;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffff;
+}
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr 8fr;
+}
+
+.header {
+  padding: 1.5rem;
+  padding-top: 0;
+  grid-column: 2/4;
+  grid-row: 1/1;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  gap: 0.625rem;
+  background-color: #ffff;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.header-search-bar {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.header input {
+  flex: 1;
+  background-color: #dbeafe;
+  border: none;
+  border-radius: 10px;
+}
+
+.header-welcome {
+  grid-column: 1/1;
+  display: grid;
+  grid-template-columns: 0.15fr 1fr;
+  grid-auto-rows: min-content;
+  gap: 0.625rem;
+}
+
+.header-welcome-para {
+  align-self: center;
+}
+
+.header-user-name {
+  font-size: 1.25rem;
+  grid-column: 2/3;
+}
+
+.header-img-user {
+  grid-column: 1/1;
+  grid-row: 1/3;
+  width: 6.25rem;
+  height: 6.25rem;
+  border-radius: 50%;
+}
+.header-btn-actions {
+  font-size: 1.25rem;
+  font-weight: 800;
+  background-color: #38bdf8;
+  color: #ffff;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+}
+.header-actions {
+  padding-left: 3.125rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+}
+
+.header-profile {
+  grid-column: 2/3;
+  grid-row: 1/1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-profile-img-user {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.nav {
+  padding: 1.125rem;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.3fr 2fr 2fr;
+  gap: 2.5rem;
+  justify-content: start;
+  background-color: #38bdf8;
+}
+.nav ul {
+  display: grid;
+  grid-auto-rows: min-content;
+  gap: 1.875rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.nav li {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  align-items: center;
+  gap: 0.625rem;
+  color: #ffff;
+}
+
+.nav > .title {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  align-items: center;
+  gap: 0.625rem;
+  color: #ffff;
+}
+
+.main {
+}
+.sidebar {
+}
+
+.main,
+.sidebar {
+  background-color: #dbeafe;
+}
+
+.icons {
+  width: 1.875rem;
+  color: #ffff;
+}
+
+.dashboard-icon {
+  width: 2.5rem;
+}
